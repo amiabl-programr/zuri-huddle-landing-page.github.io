@@ -7,6 +7,7 @@
 html,
 body {
   height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 header {
   background-image: url("./images/bg-hero-mobile.svg");
@@ -26,6 +27,10 @@ nav > button {
   padding: 9px 26px;
   border-radius: 24px;
   box-shadow: 0px 0px 11px 0px #d1bdbd;
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -48,6 +53,8 @@ img {
   border: none;
   background-color: hsl(322, 100%, 66%);
   color: white;
+  padding: 0.8rem 3rem;
+  border-radius: 1.3rem;
 }
 
 main {
@@ -70,11 +77,58 @@ main {
 }
 .cta {
   position: absolute;
+  bottom: -8rem;
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 20px 0px #0000006b;
+}
+.cta > p {
+  margin-bottom: 1rem;
 }
 
 footer {
+  color: #ffffff;
+  margin-top: 3rem;
+  padding: 9rem 3rem 3rem 3rem;
   background-color: #00252e;
 }
+.footer__contact-info > div {
+  display: flex;
+  margin-top: 1rem;
+}
+.footer__contact-info > div span {
+  margin-right: 2rem;
+  text-align: left;
+  width: 20px;
+  height: 20px;
+}
+.footer__contact-info p {
+  max-width: 280px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.footer__nav > a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
 .footer__social-icons > span {
-  /* width: 10rem; */
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.footer__social-icons > span svg:hover {
+  fill: hsl(322, 100%, 66%);
 }

@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huddle-Landing-page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div><img src="./images/logo.svg" alt="logo" /></div>
+        <div><img src="./images/logo-dark.svg" alt="logo" /></div>
         <button>Try it for free</button>
       </nav>
       <div class="hero">
@@ -73,46 +84,48 @@
       </div>
     </main>
 
-    
     <footer>
+      <div class="footer__logo">
+        <img src="./images/logo-light.svg" alt="logo" />
+      </div>
       <div class="footer__contact-info">
-        <div class="footer__logo">
-          <img src="./images/logo.svg" alt="logo" />
-        </div>
         <div class="footer__location">
-          <span
-            ><img src="./images/icon-location.svg" alt="icon-location"
-          /></span>
+          <span>
+            <img src="./images/icon-location.svg" alt="icon-location" />
+          </span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
             corrupti nemo asperiores fuga earum ad, a odit deleniti aspernatur,
           </p>
         </div>
-        <div>
+        <div class="footer__phone">
           <span><img src="./images/icon-phone.svg" alt="icon-phone" /></span>
           <p>+1-543-123-4567</p>
         </div>
-        <div>
+        <div class="footer__email">
           <span><img src="./images/icon-email.svg" alt="icon-email" /></span>
           <p>example@flyo.com</p>
         </div>
       </div>
 
-      <ul class="footer__nav">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">What We Do</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Career</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+      <div class="footer__nav">
+        <a href="#">About Us</a>
+        <a href="#">What We Do</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer__nav">
+        <a href="#">Career</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+      </div>
 
       <div class="footer__social-icons">
+        <!-- facebook-icon -->
         <span
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
-            height="30"
+            height="20"
             viewBox="0 0 20 30"
             fill="#ffffff"
           >
@@ -122,11 +135,14 @@
             />
           </svg>
         </span>
+        <!-- facebook-icon -->
+
+        <!-- twitter-icon -->
         <span
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
-            height="30"
+            height="20"
             viewBox="0 0 20 30"
             fill="#ffffff"
           >
@@ -136,11 +152,14 @@
             />
           </svg>
         </span>
+        <!-- twitter-icon -->
+
+        <!-- instagram-icon -->
         <span
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
-            height="30"
+            height="20"
             viewBox="0 0 20 30"
             fill="#ffffff"
           >
@@ -150,6 +169,7 @@
             />
           </svg>
         </span>
+        <!-- instagram-icon -->
       </div>
     </footer>
   </body>
