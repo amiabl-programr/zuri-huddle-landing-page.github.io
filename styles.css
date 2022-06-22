@@ -63,7 +63,7 @@ main {
   place-items: center;
 }
 .cards {
-  width: 300px;
+  padding: 4rem;
 }
 .card {
   box-shadow: 0px 0px 11px 0px #d1bdbd;
@@ -131,4 +131,29 @@ footer {
 
 .footer__social-icons > span svg:hover {
   fill: hsl(322, 100%, 66%);
+}
+
+@media (min-width: 530px) {
+  .cards {
+    padding: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    text-align: left;
+    padding: 1rem 1rem 1rem 3rem;
+  }
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .card p {
+    width: 14rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
 }
