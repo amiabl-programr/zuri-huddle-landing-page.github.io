@@ -18,7 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
 }
 nav > button {
   background-color: white;
@@ -31,9 +31,19 @@ nav > button {
 .nav-logo {
   width: 9rem;
 }
+
+main {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
+}
+button {
+  cursor: pointer;
 }
 
 .hero {
@@ -49,6 +59,10 @@ h2 {
   max-width: 320px;
   margin: 2rem;
 }
+.hero h1,
+.hero p {
+  margin-bottom: 1rem;
+}
 
 .hero > img {
   width: 20rem;
@@ -63,11 +77,12 @@ h2 {
   border-radius: 1.3rem;
 }
 
-main {
-  position: relative;
-  display: grid;
-  place-items: center;
-}
+/* 
+ =======================
+        card styles
+========================= 
+ */
+
 .cards {
   padding: 4rem;
   /* I used padding instead of width to control the size of the box */
@@ -81,10 +96,30 @@ main {
   padding: 10px;
   margin: 2rem 0;
   border-radius: 1rem;
+  transition: transform ease-in 0.3s;
 }
 .card img {
   max-width: 320px;
 }
+.card__info {
+  margin-top: 2rem;
+}
+.card__info p {
+  padding: 1rem 2rem;
+}
+
+/* card animations */
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* 
+ =======================
+        card styles
+========================= 
+ */
+
 .cta {
   position: absolute;
   bottom: -17rem;
@@ -186,6 +221,9 @@ footer {
   .card p {
     width: 19rem;
   }
+  .card__info p {
+    padding: 0;
+  }
   .cta {
     padding: 3rem 5.5rem 2rem;
   }
@@ -198,6 +236,10 @@ footer {
 @media (min-width: 1024px) {
   .hero > img {
     width: 24rem;
+  }
+  .hero h1,
+  p {
+    margin-bottom: 1rem;
   }
   .card img {
     margin: 0 3rem;
