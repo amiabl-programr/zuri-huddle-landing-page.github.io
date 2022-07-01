@@ -124,7 +124,7 @@ button {
   position: absolute;
   bottom: -17rem;
   background-color: #ffffff;
-  padding: 3rem 3rem;
+  padding: 3rem 2rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
