@@ -84,7 +84,7 @@ button {
  */
 
 .cards {
-  padding: 4rem;
+  padding: 1rem;
   /* I used padding instead of width to control the size of the box */
 }
 .card {
